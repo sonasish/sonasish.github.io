@@ -1,0 +1,104 @@
+*{
+margin: 0;
+padding: 0;
+font-family:sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:url('C:/Users/user/Desktop/test/assets/images/background.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 30 30; 
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar ul li:hover{
+    background-color: #333;   
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #6600ff;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px  auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #6600ff;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #6600ff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+    color: #fff;
+}
